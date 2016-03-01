@@ -1,7 +1,11 @@
 @charset "utf-8";
 
-body{
-	font-family: Microsoft JhengHei;
+body {
+	font-family: '微軟正黑體';
+}
+
+h1, h3{
+    line-height: 0.6;
 }
 
 #firstArea{
@@ -23,6 +27,13 @@ body{
 	z-index: -1;
 }
 
+.firstAreaText{
+    float: right;
+    width: 100%;
+    margin-top: -200px;
+    text-align: left;
+}
+
 #secondArea{
 	background:url(../img/background/2.png) no-repeat;
 	background-position: 0% 0%;
@@ -33,13 +44,43 @@ body{
 	padding: 0;
 }
 
+.tech {
+	width:22%;
+	padding-top: 300px;
+	padding-bottom: 150px;
+	text-align: center;
+	border-left: 6px solid #FAFAFA;
+	border-right: 3px solid #FFF;
+}
+.market {
+	width:23%;
+	padding-top: 150px;
+	padding-bottom: 200px;
+	text-align: center;
+	border-left: 3px solid #FFF;
+	border-right: 3px solid #FFF;
+}
+.art {
+	width:22%;
+	padding-top: 0px;
+	padding-bottom: 250px;
+	text-align: center;
+	border-left: 3px solid #FFF;
+	border-right: 6px solid #FFF;
+}
+.title {
+	color: #48C1D5;
+	font-size: 50px;
+	font-weight: 100;
+}
+
 #thirdArea{
 	background:url(../img/background/3.png) no-repeat;
 	background-position: 0% 0%;
 	background-size: 100% 100%;
 	color: black;
 	width: 100%;
-	height: 770px;
+	height: 870px;
 	margin: 0 auto;
 	padding: 0;
 }
@@ -102,4 +143,26 @@ body{
 }
 .scrollToTop:hover{
 	text-decoration:none;
+}
+
+
+/* line區 css */
+.line{
+	width: 100%; 
+	height: 0; 
+	margin-left: -15px;
+	border-left: 10px solid #48C1D5;
+}
+
+.line-right-text{
+	padding-left: 10px; 
+	width: 100%;
+}
+
+.line-top-text{
+	margin-left: -15px;
+}
+
+.line-bottom-text{
+	margin-left: -40px;
 }

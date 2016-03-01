@@ -4,6 +4,12 @@ $(document).ready(function(){
 	$(window).scroll(function(){
 		if ($(this).scrollTop() > 1000) {
 			$('.scrollToTop').fadeIn();
+			if($(this).scrollTop() > 1500) {
+			    $('#line1').animate({height: 150}, 1000);
+			    $('#line2').animate({height: 330}, 1000);
+			    $('#line3').animate({height: 510}, 1000);
+			    $('#line4').animate({height: 690}, 1000);
+			}
 		} else {
 			$('.scrollToTop').fadeOut();
 		}
@@ -19,5 +25,6 @@ $(document).ready(function(){
 		$('html, body').animate({scrollTop : 0},800);
 		return false;
 	});
+	
 	
 });
