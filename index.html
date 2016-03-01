@@ -8,6 +8,8 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/qa.js"></script>
+    <script src="js/handlebars.js"></script>
   </head>
   <body>
     <a href="#firstArea" class="scrollToTop"></a>
@@ -20,15 +22,10 @@
           <div class="col-xs-4">
             <img style="width: 100%;" src="img/icon/activity.png">
           </div>
-          <div class="col-xs-4" style="margin-top: -155px;">
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;微軟學生大使(Microsoft Student Partner，簡稱MSP)由美國微軟總
-            部創立的全球性學生組織，於全球超過100個國家成立微軟學生大使，並於每年招募新一屆的微軟學
-            生大使，給予微軟學生大使們專業培訓及微軟資源，在任期滿一年後頒發全球性的微軟證書。</p><br>
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;而在台灣，Microsoft Student Partner(MSP)主要是由一群來自全國
-            各大院校、充滿熱情、喜愛學習、願意接受挑戰不怕困難的學生們組成的團體，並由微軟定期提供課
-            程讓微軟學生大使們能學到許多最新的技術，且經由真實專案的執行磨練與實作提升專業技術。</p><br>
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;微軟學生大使每年固定透過各種校園活動招募更多志同道合、喜愛科技
-            的夥伴，更重要的是透過這些活動將所學與新知回饋於學界。</p><br>
+          <div class="col-xs-4" style="margin-top: -125px;">
+            <p>　　微軟學生大使(Microsoft Student Partner，簡稱MSP)由美國微軟總部創立的全球性學生組織，於全球超過100個國家成立微軟學生大使，並於每年招募新一屆的微軟學生大使，給予微軟學生大使們專業培訓及微軟資源，在任期滿一年後頒發全球性的微軟證書。</p><br>
+            <p>　　而在台灣，Microsoft Student Partner(MSP)主要是由一群來自全國各大院校、充滿熱情、喜愛學習、願意接受挑戰不怕困難的學生們組成的團體，並由微軟定期提供課程讓微軟學生大使們能學到許多最新的技術，且經由真實專案的執行磨練與實作提升專業技術。</p><br>
+            <p>　　微軟學生大使每年固定透過各種校園活動招募更多志同道合、喜愛科技的夥伴，更重要的是透過這些活動將所學與新知回饋於學界。</p><br>
           </div>
           <div class="col-xs-2"></div>
         </div>
@@ -127,23 +124,96 @@
             <h1 class="title" style="color: #000;">/報名資格</h1>
           </div>
       </div>
+      <div class="row" style="padding-top: 200px;">
+          <div class="col-xs-2"></div>
+          <div class="col-xs-10">
+              <h3>舉凡具有大專院校在校生資格者（即實習期間為在學學生），不限國籍，皆可報名。</h3>
+          </div>
+      </div>
     </div>
     <div id="fifthArea">
       <div class="row">
           <div class="col-xs-2"></div>
           <div class="col-xs-10"><h1 class="title" style="position:relative; float:left; margin-top: -40px">/審核辦法</h1></div>
       </div>
-    </div>
-    <div id="sixthArea">
       <div class="row">
           <div class="col-xs-2"></div>
-          <div class="col-xs-10">
-            <h1 class="title" style="float:left; margin-top: 500px; color: white;">/須繳文件</h1>
+          <div class="col-xs-2 step1">履歷審核</div>
+          <div class="col-xs-1"></div>
+          <div class="col-xs-2 step2">專案競賽</div>
+          <div class="col-xs-1"></div>
+          <div class="col-xs-2 step3">主管面試</div>
+          <div class="col-xs-2"></div>
+      </div>
+      <div class="row">
+          <div class="col-xs-2"></div>
+          <div class="col-xs-8" style="padding-top: 50px;">
+              <p style="font-size: 24px">請仔細閱讀相關報名內容後，並另外製作一份創意履歷及準備一張個人大頭貼後，至下方報名表單中，依項目填寫基本資料，並提供創意履歷及個人大頭貼之雲端連結，工作人員收到後會在三天內回信告知您資料已收到。</p>
+          </div>
+          <div class="col-xs-2"></div>
+      </div>
+    </div>
+    <div id="sixthArea">
+      <div class="row" style=" padding-top: 450px; ">
+          <div class="col-xs-2"></div>
+          <div class="col-xs-10" style="float:left;color: white;">
+            <h1 class="title" style="color: white;">/報名相關格式：</h1><br>
+            <h3>創意履歷名稱：創意履歷_組別（企劃組/美宣組/技術組）_姓名</h3><br><br><br><br><br><br>
+            <h1 class="title" style="color: white;">/報名表單：</h1><br>
+            <h3>請您備妥創意履歷及個人大頭貼之雲端連結後，至<a href="http://google.com">報名表單</a>進行報名。</h3>
           </div>
       </div>
     </div>
     <div id="seventhArea">
-      
+      <div class="row">
+        <div class="col-lg-2 col-xs-2"></div>
+        <div class="col-lg-10 col-xs-10" style="margin-top: -100px;">
+            <img src="img/icon/QA.png">
+        </div>
+        
+        <script id="qa-template" type="text/x-handlebars-template">
+            {{#each question}}
+            <div class="row" style="padding-bottom:20px">
+                <div class="col-xs-3"></div>
+                <div class="col-xs-7 qa_title">
+                    <div class="row" style="padding-bottom:10px;">
+                        <div class="col-xs-2"><h1>Q{{counter @index}}</h1></div>
+                        <div class="col-xs-10"><p class="qa_q">{{title}}</p></div>
+                    </div>
+                    <div class="row ans" style="display:none;">
+                        <div class="col-xs-2"><h1 style="color: #2BB8D1;">A</h1></div>
+                        <div class="col-xs-10"><p class="qa_a">{{answer}}</p></div>
+                    </div>
+                </div>
+                <div class="col-xs-2"></div>
+            </div>
+            {{/each}}
+        </script>
+        
+        <div id="qa_section"></div>
+       
+        
+      </div>
     </div>
+    <script>
+        Handlebars.registerHelper("counter", function (index){
+            return index + 1;
+        });
+        var source   = $("#qa-template").html();
+        var template = Handlebars.compile(source);
+        var html = template(qaData);
+        $('#qa_section').html(html);
+        
+        $('.qa_title').on('click', function(){
+            //$('.ans').slideUp();
+            if ($('.ans', this).css("display") == "none")
+            {
+                $('.ans', this).slideDown();
+            } else{
+              $('.ans', this).slideUp();
+            }
+            
+        });
+    </script>
   </body>
 </html>
