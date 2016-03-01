@@ -4,7 +4,8 @@ $(document).ready(function(){
 	$(window).scroll(function(){
 		if ($(this).scrollTop() > 1000) {
 			$('.scrollToTop').fadeIn();
-			if($(this).scrollTop() > 1500) {
+			if($(this).scrollTop() > 1400) {
+			    $('#line-area').css('visibility','');
 			    $('#line1').animate({height: 150}, 1000);
 			    $('#line2').animate({height: 330}, 1000);
 			    $('#line3').animate({height: 510}, 1000);

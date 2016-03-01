@@ -1,7 +1,9 @@
 @charset "utf-8";
 
 body {
-	font-family: '微軟正黑體';
+	font-family: "微軟正黑體", Arial, "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "Microsoft JhengHei", "標楷體", DFKai-SB, sans-serif;;
+	width: 100%;
+	
 }
 
 h1, h3{
