@@ -5,6 +5,7 @@
     <title>第11屆 Microsoft Student Partner 招生</title>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/index.css" type="text/css" />
+    <link rel="stylesheet" href="css/hover-min.css" type="text/css" />
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="js/index.js"></script>
@@ -43,16 +44,61 @@
       </div>
       <div class="row">
           <div class="col-xs-2"></div>
-          <div class="col-xs-2 tech">
-              <img src="img/icon/技術組.png" alt="">
+          <div class="col-xs-2 tech " data-toggle="modal" data-target="#techModal" style="cursor: pointer;">
+              <img class="hvr-grow" src="img/icon/技術組.png" alt="">
           </div>
-          <div class="col-xs-2 market">
-              <img src="img/icon/企劃組.png" alt="">
+          <div class="col-xs-2 market" data-toggle="modal" data-target="#marketModal" style="cursor: pointer;">
+              <img class="hvr-grow" src="img/icon/企劃組.png" alt="">
           </div>
-          <div class="col-xs-2 art">
-              <img src="img/icon/美宣組.png" alt="">
+          <div class="col-xs-2 art" data-toggle="modal" data-target="#artModal" style="cursor: pointer;">
+              <img class="hvr-grow" src="img/icon/美宣組.png" alt="">
           </div>
           <div class="col-xs-2"></div>
+      </div>
+    </div>
+    
+    <!-- techModal -->
+    <div class="modal fade" id="techModal" tabindex="-1" role="dialog" aria-labelledby="techModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header " style="text-align: center;">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">╳</span></button>
+            <h2 class="modal-title" id="techModalLabel">技術組</h2>
+          </div>
+          <div class="modal-body">
+            <h4 style="line-height: 2;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;由專業講師指導最新技術，掌握第一手資料，並獲得微軟提供之免費課程及書籍，藉由校園活動的實戰經驗訓練表達能力擔任技術講師，協助公司推廣各項專業技術。</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- marketModal -->
+    <div class="modal fade" id="marketModal" tabindex="-1" role="dialog" aria-labelledby="marketModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header" style="text-align: center;">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">╳</span></button>
+            <h2 class="modal-title" id="marketModalLabel">企劃組</h2>
+          </div>
+          <div class="modal-body">
+            <h4 style="line-height: 2;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;將平日所學課程應用於實際專案，從企劃發想、活動規劃到經費運用等，從做中學不斷累積經驗。並擔任活動之校際負責人、主持人，訓練公關能力與穩健台風。</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- artModal -->
+    <div class="modal fade" id="artModal" tabindex="-1" role="dialog" aria-labelledby="artModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header" style="text-align: center;">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">╳</span></button>
+            <h2 class="modal-title" id="artModalLabel">美宣組</h2>
+          </div>
+          <div class="modal-body">
+            <h4 style="line-height: 2;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;美宣組除負責活動相關之宣傳品、紀念品設計，提升微軟學生大使形象外，也與企劃組合作發想全年企劃案、技術組合作架設官方宣傳網站，且還有機會承接公司官方宣傳品之設計。</h4>
+          </div>
+        </div>
       </div>
     </div>
     
